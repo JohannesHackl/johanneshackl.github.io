@@ -645,7 +645,7 @@ a.box:active {
 .button .icon.is-medium,
 .button .icon.is-small {
   height: 1.5em;
-  width: 1.5em;
+  width: 5.5em;
 }
 .button .icon:first-child:not(:last-child) {
   margin-left: calc(-0.5em - 1px);
@@ -5240,7 +5240,7 @@ button.dropdown-item.is-active {
   }
 }
 .navbar.is-primary {
-  background-color: #454545;
+  background-color: #092f4d;
   color: #fff;
 }
 .navbar.is-primary .navbar-brand .navbar-link,
