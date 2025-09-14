@@ -645,7 +645,7 @@ a.box:active {
 .button .icon.is-medium,
 .button .icon.is-small {
   height: 1.5em;
-  width: 5.5em;
+  width: 1.5em;
 }
 .button .icon:first-child:not(:last-child) {
   margin-left: calc(-0.5em - 1px);
@@ -2196,7 +2196,7 @@ fieldset[disabled] .button {
   display: inline-flex;
   height: 1.5rem;
   justify-content: center;
-  width: 1.5rem;
+  width: 20rem;
 }
 .icon.is-small {
   height: 1rem;
