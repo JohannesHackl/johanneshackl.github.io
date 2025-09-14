@@ -2233,6 +2233,8 @@ div.icon-text {
 }
 .image {
   display: block;
+  max-width: 100%;
+  height: auto;
   position: relative;
 }
 .image img {
