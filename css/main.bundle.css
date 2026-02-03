@@ -2234,8 +2234,9 @@ div.icon-text {
 .image {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
   position: relative;
+  margin-top: auto;
 }
 .image img {
   display: block;
@@ -7710,12 +7711,45 @@ label.panel-block:hover {
 }
 .tile {
   align-items: stretch;
-  display: block;
-  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+  /* flex-basis: 0; */
   flex-grow: 1;
-  flex-shrink: 1;
-  min-height: min-content;
+  /* flex-shrink: 1; */
+  margin-bottom: 25px;
+  flex: 1 1 0;
 }
+.tile .image img {
+  position: relative;
+  top: auto;
+  bottom: auto;
+}
+
+.carousel-cell {
+  width: 100%;
+  &.image.is-4by3 { padding-top: 75% !important; }
+  &.image.is-3by2 { padding-top: 66.6666% !important; }
+  &.image.is-16by9 { padding-top: 56.25% !important; }
+  &.image.is-square { padding-top: 100% !important; }
+
+  img {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+  }
+}
+
+
+.is-selected .carousel-cell .image.is-4by3 img {
+  height: 100px;
+  width: 50%;
+  object-fit: contain;
+}
+
 .tile.is-ancestor {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -7732,6 +7766,8 @@ label.panel-block:hover {
 }
 .tile.is-parent {
   padding: 0.75rem;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 .tile.is-vertical {
   flex-direction: column;
@@ -7741,7 +7777,8 @@ label.panel-block:hover {
 }
 @media print, screen and (min-width: 769px) {
   .tile:not(.is-child) {
-    display: flex;
+    /* display: flex; */
+    flex-direction: row;
   }
   .tile.is-1 {
     flex: none;

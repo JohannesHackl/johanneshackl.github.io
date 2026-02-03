@@ -39,7 +39,52 @@ a.icon > strong {margin-left:.25rem}
 }
 
 // Flickity - begin
-.carousel-cell {width:100%}
+.carousel-cell {
+  width: 100%;
+  // Force Bulma aspect ratio styles to persist in carousel
+  &.image.is-4by3 { padding-top: 75% !important; }
+  &.image.is-3by2 { padding-top: 66.6666% !important; }
+  &.image.is-16by9 { padding-top: 56.25% !important; }
+  &.image.is-square { padding-top: 100% !important; }
+
+  img {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 // Flickity - end
 
- 
+// Project tiles - fix image overflow and layout
+.tile.is-child.notification {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  // Ensure content flows naturally
+  .title {
+    flex: 0 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  // Override Bulma's aspect ratio logic so images flow naturally
+  // This prevents them from overflowing if they don't match the aspect ratio exactly
+  .image.is-3by2,
+  .image.is-4by3,
+  .image.is-square,
+  .image.is-16by9 {
+    padding-top: 0 !important;
+    height: auto !important;
+    flex: 1 1 auto;
+
+    img {
+      position: static !important;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
