@@ -353,7 +353,7 @@
           <!-- <div class="tile"> -->
             <div class="tile">
               <article class="tile is-child notification">
-                <p class="title">Machine Learning</p>
+                <p class="title">Data Mining & Machine Learning</p>
                 <figure class="image is-3by2">
                   <img class="modal-trigger" data-target="project-1-modal" src="img/DataMining_PCA_Clustering.png">
                 </figure>
@@ -379,37 +379,36 @@
         <!-- </div> -->
       </div>
 
-      <!-- Hidden Projects: -->
-      <!-- <div class="tile is-ancestor">   
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
+      <div class="tile is-parent">
+        <!-- <div class="tile is-vertical is-12"> -->
+          <!-- <div class="tile"> -->
+            <div class="tile">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
+                <p class="title">Machine Learning for Computer Vision</p>
+                <figure class="image is-3by2">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/AMLCV_model_inference.png">
                 </figure>
               </article>
             </div>
-            <div class="tile is-parent">
+            <div class="tile">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">Search Engine</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
+                  <img class="modal-trigger" data-target="project-5-modal" src="img/comingsoon.png">
                 </figure>
               </article>
             </div>
-            <div class="tile is-parent">
+            <div class="tile">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
+                <p class="title">DevOps</p>
                 <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
+                  <img class="modal-trigger" data-target="project-6-modal" src="img/comingsoon.png">
                 </figure>
               </article>
             </div>
-          </div>
-        </div>
-      </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
     </div>
   </section>
 
@@ -617,28 +616,42 @@
       </header>
       <section class="modal-card-body">
         <div id="project-4-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+          <figure class="image is-square carousel-cell">
+            <img src="img/carousel_project_AMLCV/loss_curve.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+            <img src="img/carousel_project_AMLCV/confusion_matrix.png">
           </figure>
           <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+            <img src="img/carousel_project_AMLCV/train_distribution.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel_project_AMLCV/test_distribution.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel_project_AMLCV/valid_distribution.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/carousel_project_AMLCV/combined_class_distribution.png">
+          </figure>
+          <figure class="image is-square carousel-cell">
+            <img src="img/carousel_project_AMLCV/predictions_grid_zoom.png">
           </figure>
         </div>
 
         <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p>Image segmentation is a fundamental task in computer vision with applications in warehouse automation, inventory management and package sorting. This work investigates the application of pre-trained semantic segmentation models to detect and segment boxes, barcodes and plastic bags in images. We construct a unified dataset by combining four heterogeneous sources totaling 8,854 images with varying class annotations. We evaluate a MobileNetV3-DeepLabV3 model on this combined dataset, measuring performance using Intersection over Union (IoU) and Dice coefficient metrics. We fine-tune the model using class-weighted cross-entropy loss with early stopping based on validation performance. Our results demonstrate that the pre-trained model achieves excellent segmentation performance with a mean IoU of 0.9433 across all classes, with particularly strong results on boxes (0.9480) and the background class (0.9578). We analyze the challenges of learning from heterogeneous datasets with significant class imbalance and identify key strengths and limitations of the approach for practical deployment.</p>
+          <a href = https://github.com/JohannesHackl/AMLCV_Project_2025>
+            <p>AMLCV Segmentation - Github Repo</p>
+            <p> </p>
+          </a>
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">pytorch</span>
+            <span class="tag">MobileNetV3</span>
+            <span class="tag">transfer learning</span>
+            <span class="tag">segmentation</span>
+            <span class="tag">industrial automation</span>
+            <span class="tag">python</span>
           </div>
         </div>
 
